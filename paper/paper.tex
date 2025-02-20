@@ -6,6 +6,7 @@
 \documentclass{article}
 
 \usepackage [brazil]{babel}
+\usepackage{graphicx} 
 
 % Corpo
 % onde escreve o texto 
@@ -16,6 +17,7 @@
 \author{Julia}
 
 \maketitle 
+% \pagebreak para quebra de página 
 
 \begin{abstract}
 Meu resumo 
@@ -26,7 +28,7 @@ Meu resumo
 Isso vai ser a introdução.
 Outra frase.
 
-Outro parágrafo. 	
+Outro parágrafo. %pulando linha 	
 
 \section{Metodologia}
 \label{sec:metodos}
@@ -47,6 +49,20 @@ T(t) = a t + b,
 \noindent
 onde $T$ é a temperatura, $t$ é o tempo, $a$ é o coeficiente angular e $b$ é o coeficiente linear. 
 
-Utilizamos a equação \ref{eq:reta} em um código python para fazer um ajuste da reta com o método dos mínimos quadrados. Na seção \ref{sec:metodos}
+Utilizamos a equação \ref{eq:reta} em um código python para fazer um ajuste da reta com o método dos mínimos quadrados. Na seção \ref{sec:metodos}.
+
+\section{Resultados}
+
+Analisamos os dados de 225 países. São muitos dados. 
+
+\begin{figure}[!htb] %para redirecionar a figura 
+\centering 
+\includegraphics{../figuras/variacao_temperatura.png} %[width=\columnwidth] 
+\caption{Variação de temperatura média mensal dos cinco últimos anos. a) Países com as cinco maiores variações de temperaturas. 
+b) Países com as cinco menores variações de temperaturas.}
+\label{fig:variacao}
+\end{figure}
+
+Os resultados da análise de variação de temperatura estão na figura \ref{fig:variacao}.
 
 \end{document} 
